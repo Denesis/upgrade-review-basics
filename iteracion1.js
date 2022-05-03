@@ -1,7 +1,9 @@
 // Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de
 //  las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse.
-//  Para filtrar las categorías puedes ayudarte de la función .includes()
+//  Para filtrar las categorías puedes ayudarte de la función .includes
 
+// [] clave - valor --> clave: indice, valor: valor del indice
+// {} clave - valor --> clave: propiedad, valor: valor de la propiedad
 const movies = [
   { title: "Madaraspar", duration: 192, categories: ["comedia", "aventura"] },
   { title: "Spiderpan", duration: 122, categories: ["aventura", "acción"] },
@@ -27,10 +29,6 @@ for (const movie of movies) {
       categories.push(category);
     }
   }
-  duration.push(movie.duration);
-
-  movieTime.push([movie.categories, movie.categories]);
 }
 console.log(categories);
-console.log(duration);
-console.log(movieTime);
+
