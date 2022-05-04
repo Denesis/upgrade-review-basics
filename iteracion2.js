@@ -42,7 +42,8 @@ let sumTimes = 0;
 for (const user of users) {
     for (const sound in user.favoritesSounds) {
         sumVolum += user.favoritesSounds[sound].volume
-        console.log(sound.length);
+        sumTimes++;
         
     }
 }
+console.log(sumVolum/sumTimes)
