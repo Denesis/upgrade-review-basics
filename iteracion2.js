@@ -40,10 +40,9 @@ let sumVolum = 0;
 let sumTimes = 0;
 
 for (const user of users) {
-    for (const sound in user.favoritesSounds) {
-        sumVolum += user.favoritesSounds[sound].volume
-        sumTimes++;
-        
-    }
+  for (const soundVolumen in user.favoritesSounds) {
+    sumVolum += user.favoritesSounds[soundVolumen].volume;
+    sumTimes++;
+  }
 }
-console.log(sumVolum/sumTimes)
+console.log(sumVolum / sumTimes);
